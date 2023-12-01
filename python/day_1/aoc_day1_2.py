@@ -5,6 +5,7 @@ from utils.utils import get_data, exract_digits, first_last, replace_string_digi
 
 
 def main() -> None:
+    data_path = "./../../data/input_01.txt"
     console = Console()
     table = Table(title="Output")
     table.add_column("Original")
@@ -12,8 +13,8 @@ def main() -> None:
     table.add_column("Extracted")
     table.add_column("Final Number")
 
-    input_data = get_data("./data/input_01.txt")
-    original = get_data("./data/input_01.txt")
+    input_data = get_data(data_path)
+    original = get_data(data_path)
     parsed_digits = replace_string_digits(input_data)
     extracted = exract_digits(parsed_digits)
     final_numbers = first_last(extracted)

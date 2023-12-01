@@ -3,7 +3,7 @@ from utils.utils import get_data, exract_digits, first_last
 
 
 def main() -> None:
-    input_data = get_data("./data/input_01.txt")
+    input_data = get_data("./../../data")
     extracted = exract_digits(input_data)
 
     print(sum(first_last(extracted)))
