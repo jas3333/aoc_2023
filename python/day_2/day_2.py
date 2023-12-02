@@ -5,7 +5,7 @@ with open("./data/puzzle_input.txt", "r") as file:
     games = file.readlines()
 
 
-def part_one() -> None:
+def main() -> None:
     parsed_data = parse_data(games)
 
     print(part_one_solve(parsed_data))
@@ -13,4 +13,4 @@ def part_one() -> None:
 
 
 if __name__ == "__main__":
-    part_one()
+    main()
